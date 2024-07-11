@@ -72,7 +72,7 @@
 /* front images slide */
 
 .image{
-    width:900px;
+    width:850px;
     height:300px;
     background: url(images/slide1.jpeg);
     margin:10px;
@@ -267,7 +267,7 @@ h4{
 
     .product{
         width:320px;
-        height:188px;
+        height:200px;
         gap:10px;
     }
 
