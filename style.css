@@ -260,15 +260,15 @@ h4{
     }
 
     .image{
-        width:350px;
+        width:150px;
         height: 250px;
     }
 
 
     .product{
         width:320px;
-        height:300px;
-        gap:10px;
+        height:350px;
+        padding:5px;
     }
 
     .product img{
