@@ -254,7 +254,7 @@ h4{
 }
 
 
-@media screen and (max-width:600px){
+@media screen and (max-width:765px){
     .image1 p{
         font-size: 15px;
     }
@@ -278,6 +278,9 @@ h4{
     .product p{
         padding:2px;
         font-size: 15px;
+    }
+    .footer{
+        margin:0px;
     }
 }
 
