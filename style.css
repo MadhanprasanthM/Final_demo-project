@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Glitch+Pop&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif
+}
+
+.logo{
+    padding:15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo h1{
+    color:black;
+    font-family: "Roboto", sans-serif;
+    font-size:28px;
+}
+.logo img{
+    width:30px;
+    height:30px;
+}
+
+.logo a{
+    text-decoration: none;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid red;
+    font-size:14px;
+    background-color: red;
+    color:white;
+}
+
+.logo a:hover{
+    background-color: rgb(255, 123, 0);
+}
+
+.navbar ul{
+    list-style: none;
+    display:flex;
+    background-color:black;
+}
+
+.navbar ul li{
+    padding:10px;
+    padding-right:20px;
+}
+
+.navbar ul li a{
+    color:white;
+    font-size: 15px;
+    padding-left: 5px;
+    text-decoration: none;
+}
+
+.navbar ul li:hover{
+    background-color: red;
+}
+
+.navbar ul li:active{
+    background-color: rgb(255, 64, 0);
+}
+
+/* front images slide */
+
+.image{
+    width:900px;
+    height:300px;
+    background: url(images/slide1.jpeg);
+    margin:10px;
+    border-radius: 30px;
+    animation:slide 20s infinite;
+}
+
+
+/* animation for slide image */
+@keyframes slide {
+    30%{
+        background:url(images/mobile.jpg);
+    }
+    50%{
+        background:url(images/slide3.png);
+    }
+    100%{
+        background:url(images/slide4.jpg);
+    }
+}
+
+.image1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.image1 p{
+    padding: 2px;
+    font-size: 20px;
+}
+.image1 button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: red;
+    color:white;
+    border: none;
+}
+
+/* products design */
+
+
+h4{
+    padding:10px;
+    font-size: 18px;
+}
+
+.products{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:2px;
+    margin-bottom:20px;
+}
+
+.product{
+    width:250px;
+    height:188px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display:flex;
+    border-radius: 10px;
+    gap:10px;
+    padding:20px;
+    margin:20px;
+}
+
+.product img{
+    width:130px;
+    height:130px;
+    object-fit: cover;
+    transition:0.1s;
+}
+
+.product img:hover{
+    transform: translateY(-2px);
+}
+
+.para{
+    font-size: 15px;
+}
+
+.para p{
+    padding: 2px;
+}
+
+.btn{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+    color:white;
+}
+
+.btn:hover{
+    background-color: rgb(255, 64, 0);
+    cursor: pointer;
+}
+
+/* footer design */
+.footer{
+    height:200px;
+    width:100%;
+    margin-top:10px;
+    background-color: red;
+    color: white;
+}
+
+.footer-content{
+    padding:30px;
+    padding-bottom:0px;
+    font-weight: 500;
+}
+
+.social-link{
+    padding-left:50px;
+}
+
+.footer-content img{
+    width:20px;
+    height:20px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.social-link{
+    padding:20px;
+}
+
+.social-link ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding:10px;
+}
+
+.social-link ul li a{
+    color:black;
+    padding:10px;
+}
+
+.social-link ul li a:hover{
+    color:white;
+}
+
+/* search design */
+
+.search-item{
+    margin: 20px;
+    display:none;
+}
+.searching{
+    width:80%;
+    border:2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    border-radius: 30px;
+}
+
+.search{
+    width:100%;
+    padding:5px;
+    border: none;
+    outline: none;
+}
+
+.search::placeholder{
+    color:grey;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+@media screen and (max-width:600px){
+    .image1 p{
+        font-size: 15px;
+    }
+
+    .image{
+        width: 420px;
+        height: 250px;
+    }
+
+
+    .product{
+        width:320px;
+        height:188px;
+        gap:10px;
+    }
+
+    .product img{
+        padding:10px ;
+    }
+
+    .product p{
+        padding:2px;
+        font-size: 15px;
+    }
+}
+
