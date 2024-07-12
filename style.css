@@ -8,9 +8,13 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "Poppins", sans-serif
+    font-family: "Poppins", sans-serif;
+    
 }
 
+body{
+    overflow-x: hidden;
+}
 .logo{
     padding:15px;
     display: flex;
@@ -46,6 +50,7 @@
 .navbar ul{
     list-style: none;
     display:flex;
+    width:100vw;
     background-color:black;
 }
 
@@ -72,9 +77,10 @@
 /* front images slide */
 
 .image{
-    width:850px;
+    width:900px;
     height:300px;
     background: url(images/slide1.jpeg);
+    overflow: hidden;
     margin:10px;
     border-radius: 30px;
     animation:slide 20s infinite;
@@ -100,6 +106,8 @@
     align-items: center;
     margin-top:20px;
     margin-bottom: 20px;
+    width:100vw;
+    height:300px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -127,8 +135,6 @@ h4{
 
 .products{
     display:flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     padding:2px;
     margin-bottom:20px;
@@ -136,7 +142,7 @@ h4{
 
 .product{
     width:250px;
-    height:188px;
+    height:250px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display:flex;
     border-radius: 10px;
@@ -179,11 +185,11 @@ h4{
 
 /* footer design */
 .footer{
-    height:200px;
-    width:100%;
-    margin-top:10px;
+    width:100vw;
+    height: 250px;
     background-color: red;
     color: white;
+    position:relative;
 }
 
 .footer-content{
@@ -224,6 +230,12 @@ h4{
     color:white;
 }
 
+.copyright{
+    font-size:15px;
+    color:gold;
+}
+
+
 /* search design */
 
 .search-item{
@@ -254,33 +266,40 @@ h4{
 }
 
 
-@media screen and (max-width:500px){
+
+@media screen and (max-width:600px){
     .image1 p{
         font-size: 15px;
+        padding:1px;
     }
 
+    .image1{
+        padding:20px;
+    }
+
+
     .image{
-        width:220px;
+        width: 300px;
         height: 250px;
     }
 
 
     .product{
         width:320px;
-        height:290x;
-        padding:5px;
+        height:240px;
+        margin:70px;
+        margin-bottom: -30px;
     }
 
     .product img{
-        padding:10px ;
+        padding:20px ;
     }
 
     .product p{
         padding:2px;
         font-size: 15px;
     }
-    .footer{
-        margin:0px;
-    }
+
+    
 }
 
