@@ -130,7 +130,33 @@ body{
     }
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:auto;
+    background-color: turquoise;
+    padding:10px;
+    gap:5px;
+}
 
+.content img{
+    width:180px;
+    height:160px;
+}
+
+.content p{
+    padding: 2px;
+}
+
+.content button{
+    background-color: red;
+    color:white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 
 
@@ -138,5 +164,9 @@ body{
     .image{
         width:70%;
         height: 250px;
+    }
+
+    .content p{
+        font-size: 13px;
     }
 }
