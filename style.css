@@ -10,6 +10,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+html,body{
+    width:100%;
+    height: 100%;
+    margin: 0px;
+    padding:0px;
+    overflow-x: hidden;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -130,15 +138,14 @@ body{
     }
 }
 
+/* content show design */
 .content{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100vw;
-    height:auto;
-    background-color: turquoise;
+    background: radial-gradient(#fff,rgb(255, 60, 0));
     padding:10px;
-    gap:5px;
+    gap:10px;
 }
 
 .content img{
@@ -158,17 +165,122 @@ body{
     border-radius: 5px;
 }
 
+/* products design */
+
+h4{
+    padding:10px;
+    font-size: 18px;
+}
+
+.products{
+    display:flex;
+    flex-wrap: wrap;
+    padding:30px;
+    margin-bottom:20px;
+}
+
+.product{
+    width:250px;
+    height:235px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display:flex;
+    border-radius: 10px;
+    gap:10px;
+    padding:20px;
+    margin:20px;
+}
+
+.product img{
+    width:130px;
+    height:130px;
+    margin-top: 20px;
+    object-fit: cover;
+    transition:0.1s;
+}
+
+.product img:hover{
+    transform: translateY(-2px);
+}
+
+.product img:active{
+    transform: translateY(-2px);
+}
+
+.para{
+    font-size: 15px;
+}
+
+.para p{
+    padding: 1.5px;
+}
+
+.btn{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+    color:white;
+}
+
+.btn:hover{
+    background-color: rgb(255, 64, 0);
+    cursor: pointer;
+}
+
+/* footer design */
+.footer{
+    width: 100vw;
+    height:260px;
+    background-color: red;
+    color:white;
+}
+
+.footer-content img{
+    width:20px;
+    height:20px;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.footer-content{
+    padding:30px;
+    padding-bottom:0px;
+    font-weight: 500;
+}
+
+.social-link{
+    padding:20px;
+}
+
+.social-link ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    padding:10px;
+}
+
+.social-link ul li a{
+    color:black;
+    padding:10px;
+}
+
+.social-link ul li a:hover{
+    color:white;
+}
+
+.social-link ul li a:active{
+    color:white;
+}
+
+.copyright{
+    font-size:15px;
+    color:gold;
+}
 
 
 @media screen and (max-width:600px){
-    html,body{
-        width:100%;
-        height: 100%;
-        margin: 0px;
-        padding:0px;
-        overflow-x: hidden;
-    }
-
+    
     .image{
         width:70%;
         height: 250px;
@@ -176,5 +288,24 @@ body{
 
     .content p{
         font-size: 13px;
+    }
+
+    .products{
+        margin-left: 10px;
+    }
+
+    .product{
+        width:320px;
+        height:240px;
+    }
+
+    .product img{
+        padding:20px ;
+        margin-top: 10px;
+    }
+
+    .product p{
+        padding:2px;
+        font-size: 15px;
     }
 }
