@@ -282,7 +282,7 @@ h4{
 @media screen and (max-width:600px){
     
     .image{
-        width:70%;
+        width:80%;
         height: 250px;
     }
 
@@ -303,7 +303,6 @@ h4{
     .product img{
         width:130px;
         height:130px;
-        padding:20px ;
     }
 
     .product p{
